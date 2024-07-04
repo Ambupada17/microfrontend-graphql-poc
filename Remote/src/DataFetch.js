@@ -82,7 +82,7 @@ const DataFetch = () => {
 
             <input 
                 type="text"
-                className="search-input"
+                className="data-container__search-input"
                 placeholder="Search by name or email"
                 value={searchTerm}
                 onChange={handleSearchChange}            
@@ -90,19 +90,19 @@ const DataFetch = () => {
 
             {error && <p>Error on fetching Data: {error.message}</p>}
 
-            <ul>
+            <ul className="data-container__list">
                 {currentItems.map(user => (
-                    <li key={user.id} onClick={() => handleUserClick(user)}>
+                    <li key={user.id} className="data-container__list-item" onClick={() => handleUserClick(user)}>
                         <p>Name: {user.name}</p>
                         <p>Email: {user.email}</p>
                     </li>
                 ))}
             </ul>
-            <div className="pagination">
+            <div className="data-container__pagination">
                 {Array.from({ length: totalPages}, (_, index) => (
                     <button
                         key={index+1}
-                        className={index +1 === currentPage ? "active" : ""}
+                        className={`data-container__pagination-button ${index +1 === currentPage ? "data-container__pagination-button--active" : ""}`}
                         onClick={() => handlePageChange(index + 1)}
                     >
                         {index+1}

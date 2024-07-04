@@ -1,4 +1,4 @@
-.user-detail-overlay {
+.user-detail__overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -11,7 +11,7 @@
     z-index: 1000;
 }
 
-.user-detail-container {
+.user-detail__container {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -21,17 +21,17 @@
 
 }
 
-.user-detail-container h2 {
+.user-detail__title {
     margin-bottom: 20px;
     color: #333;
 }
 
-.user-detail-container p {
+.user-detail__info {
     margin: 10px 0;
     color: #555;
 }
 
-.close-button {
+.user-detail__close-button {
     background: #ff5c5c;
     color: #fff;
     border: none;
@@ -42,6 +42,6 @@
     transition: background-color 0.3s ease;
 }
 
-.close-button:hover {
+.user-detail__close-button:hover {
     background: #ff4040;
 }

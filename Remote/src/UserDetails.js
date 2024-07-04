@@ -5,17 +5,17 @@ const UserDetails = ({ user , onClose }) => {
     if(!user) return null;
 
     return  (
-        <div className="user-detail-overlay">
-            <div className="user-detail-container">
-                <button className="close-button" onClick={onClose}></button>
+        <div className="user-detail__overlay">
+            <div className="user-detail__container">
+                <button className="user-detail__close-button" onClick={onClose}>X</button>
 
-                <h2>{user.name}</h2>
-                <p><strong>Email:</strong>{user.email}</p>
-                <p><strong>Phone:</strong>{user.phone}</p>
-                <p><strong>Address:</strong></p>
+                <h2 className="user-detail__title">{user.name}</h2>
+                <p className="user-detail__info"><strong>Email:</strong>{user.email}</p>
+                <p className="user-detail__info"><strong>Phone:</strong>{user.phone}</p>
+                <p className="user-detail__info"><strong>Address:</strong></p>
 
-                <p>{user.address.street},{user.address.suite}</p>
-                <p>{user.address.city}, {user.address.zipcode}</p>
+                <p className="user-detail__info">{user.address.street},{user.address.suite}</p>
+                <p className="user-detail__info">{user.address.city}, {user.address.zipcode}</p>
             </div>
         </div>
     )
