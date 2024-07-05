@@ -1,8 +1,8 @@
 import React, {useState } from "react";
 import axios from 'axios';
-import './DataFetch.css';
+import './DataFetch.scss';
 import DataFetchButton from "./DataFetchButton";
-import './DataFetchButton.css';
+import './DataFetchButton.scss';
 import UserDetails from "./UserDetails";
 
 

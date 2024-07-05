@@ -1,5 +1,5 @@
 import React from "react";
-import './UserDetails.css';
+import './UserDetails.scss';
 
 const UserDetails = ({ user , onClose }) => {
     if(!user) return null;

@@ -1,5 +1,5 @@
 import React from "react";
-import './DataFetchButton.css';
+import './DataFetchButton.scss';
 
 
 const DataFetchButton = ({ onClick }) => {

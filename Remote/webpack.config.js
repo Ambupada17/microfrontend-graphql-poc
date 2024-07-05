@@ -29,8 +29,8 @@ module.exports = {
        ],
      },
      {
-       test: /\.css$/i,
-       use: ["style-loader", "css-loader"],
+       test: /\.scss$/i,
+       use: ["style-loader", "css-loader", "sass-loader"],
      },
      {
        test: /\.(gif|png|jpe?g|svg)$/,
@@ -61,7 +61,10 @@ module.exports = {
       "./Button": "./src/Button",
       "./DataFetch": "./src/DataFetch",
       "./DataFetchButton": "./src/DataFetchButton",
+      "./Banner": "./src/Banner",
       "./UserDetails": "./src/UserDetails",
+      "./Footer": "./src/Footer",
+      "./NavBar": "./src/NavBar",
     },
     shared: {
       ...dependencies,
