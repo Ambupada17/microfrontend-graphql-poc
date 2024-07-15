@@ -1,0 +1,38 @@
+{
+  "name": "banner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Banner.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6007",
+    "build-storybook": "storybook build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.1",
+    "@storybook/addon-a11y": "^8.2.2",
+    "@storybook/addon-essentials": "^8.2.2",
+    "@storybook/addon-interactions": "^8.2.2",
+    "@storybook/addon-links": "^8.2.2",
+    "@storybook/addon-onboarding": "^8.2.2",
+    "@storybook/addon-viewport": "^8.2.2",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.4",
+    "@storybook/blocks": "^8.2.2",
+    "@storybook/react": "^8.2.2",
+    "@storybook/react-webpack5": "^8.2.2",
+    "@storybook/test": "^8.2.2",
+    "css-loader": "^7.1.2",
+    "prop-types": "^15.8.1",
+    "sass": "^1.77.8",
+    "sass-loader": "^14.2.1",
+    "storybook": "^8.2.2",
+    "style-loader": "^4.0.0"
+  },
+  "dependencies": {
+    "@storybook/addon-backgrounds": "^8.2.3",
+    "@storybook/addon-knobs": "^8.0.1"
+  }
+}

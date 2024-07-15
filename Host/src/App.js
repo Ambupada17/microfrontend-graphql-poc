@@ -8,6 +8,7 @@ const RemoteUserDetails = React.lazy(() => import("Remote/UserDetails"));
 const RemoteBanner = React.lazy(() => import("Remote/Banner"));
 const RemoteFooter = React.lazy(() => import("Remote/Footer"));
 const RemoteNavBar = React.lazy(() => import("Remote/NavBar"));
+const RemoteFaq = React.lazy(() => import("Remote/Faq"));
 
 const RemoteWrapper = ({ children }) => (
   <div
@@ -48,6 +49,10 @@ export const App = () => (
 
     <RemoteWrapper>
       <RemoteUserDetails />
+    </RemoteWrapper>
+
+    <RemoteWrapper>
+      <RemoteFaq />
     </RemoteWrapper>
 
     <RemoteWrapper>
