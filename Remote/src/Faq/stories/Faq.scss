@@ -1,0 +1,48 @@
+@import '../../styles/mixins.scss';
+
+.faq {
+  padding: 50px 20px;
+  background-color: #f0f0f0;
+
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    @include responsive-max-width(600px);
+    // max-width: 600px;
+    // margin: 0 auto;
+  }
+
+  &__item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    cursor: pointer;
+    @include transition(background);
+    // justify-content: center;
+    // align-items: center;
+    // display: flex;
+
+    &:hover {
+        background: #eaeaea;
+    }
+  }
+
+  &__question {
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  &__answer {
+    margin-top: 10px;
+    color: #555;
+  }
+
+}

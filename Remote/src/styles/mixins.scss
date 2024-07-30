@@ -1,0 +1,21 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+   
+  @mixin box-style($bg-color: #f9f9f9, $padding: 20px, $border-radius: 8px, $box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)) {
+    background-color: $bg-color;
+    padding: $padding;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+  }
+   
+  @mixin responsive-max-width($max-width: 100%) {
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+   
+  @mixin transition($property: all, $duration: 0.3s, $timing: ease) {
+    transition: $property $duration $timing;
+  }

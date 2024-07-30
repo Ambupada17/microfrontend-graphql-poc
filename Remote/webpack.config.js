@@ -29,8 +29,8 @@ module.exports = {
        ],
      },
      {
-       test: /\.css$/i,
-       use: ["style-loader", "css-loader"],
+       test: /\.scss$/i,
+       use: ["style-loader", "css-loader", "sass-loader"],
      },
      {
        test: /\.(gif|png|jpe?g|svg)$/,
@@ -57,11 +57,15 @@ module.exports = {
   
     filename: "moduleEntry.js",
     exposes: {
-      "./App": "./src/App",
+      "./App": "./src/App/App",
       "./Button": "./src/Button",
-      "./DataFetch": "./src/DataFetch",
-      "./DataFetchButton": "./src/DataFetchButton",
-      "./UserDetails": "./src/UserDetails",
+      "./DataFetch": "./src/DataFetch/stories/DataFetch",
+      "./DataFetchButton": "./src/DataFetchButton/stories/DataFetchButton",
+      "./Banner": "./src/Banner/stories/Banner",
+      "./UserDetails": "./src/UserDetails/stories/UserDetails",
+      "./Footer": "./src/Footer/stories/Footer",
+      "./NavBar": "./src/NavBar/stories/NavBar",
+      "./Faq": "./src/Faq/stories/Faq"
     },
     shared: {
       ...dependencies,
